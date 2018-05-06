@@ -45,7 +45,7 @@ sudo make -j6 install
 
 ## Using CPI in your own project
 
-Because we use a JPL quaternion navigation state, factors that are not included in this repository will need to be derived into respect of this state.
+Because we use a JPL quaternion navigation state, factors that are not included in this repository will need to be derived in respect of this state.
 Take a look at the cpi_compare directory for more detail on key files and their functions.
 Here are the recommended steps for using this in your own system:
 
