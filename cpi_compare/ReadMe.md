@@ -11,7 +11,7 @@ Key sections of the code will be described below.
 1. Build your ROS workspace
 2. Source your workspace
 3. Launch RVIS and open the `rviz.rviz` config in the launch folder
-4. Launch `roslaunch cpi cpi_compare synthetic_test.launch`
+4. Launch `roslaunch cpi_compare synthetic_test.launch`
 5. Look at RVIZ for trajectories
 
 

@@ -1,4 +1,5 @@
-# Continuous Preintegration Theory for Graph-based Visual-Inertial Navigation
+# Continuous Preintegration
+
 
 This package contains the code implementation of the continuous time preintegration (CPI) methods [[1]](http://udel.edu/~ghuang/papers/tr_cpi.pdf).
 We provide a complete system for visual-inertial navigation using synthetically generated vision and inertial measurements.
