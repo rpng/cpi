@@ -1,0 +1,4 @@
+data_est/*
+!data_est/.gitkeep
+*.m~
+*.png
