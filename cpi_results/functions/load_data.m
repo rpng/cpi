@@ -31,7 +31,7 @@ headerlinesIn = 1;
 
 % Define our array of pose data
 data_e = {};
-data_d = {'-','-','-','-','-'};
+data_d = {'-','-','-','-','-','-','-','-','-','-','-','-','-','-','-','-'};
 data_c = distinguishable_colors(10, {'w','y'});
 data_c(6,:) = data_c(10,:);
 
@@ -79,6 +79,7 @@ for file = dir([path_main,path_sub,'*.txt'])'
         data_e{length(data_e)+1} = importdata([path_main,path_sub,file.name],delimiterIn,headerlinesIn);
     end
 end
+
 
 
 % ===================================================================

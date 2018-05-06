@@ -404,7 +404,7 @@ public:
         Eigen::Matrix<double, 21, 12> G_k4 = Eigen::Matrix<double, 21, 12>::Zero();
         G_k4.block(0, 0, 3, 3) = -eye3;
         G_k4.block(3, 3, 3, 3) = eye3;
-        G_k4.block(6, 6, 3, 3) = -R_k2tau.transpose();
+        G_k4.block(6, 6, 3, 3) = -R_k2tau1.transpose();
         G_k4.block(9, 9, 3, 3) = eye3;
 
         // Get state transition and covariance derivative
