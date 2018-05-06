@@ -42,33 +42,11 @@ path_gt = 'data_gt/';
 
 stop_num = 430;
 %stop_num = 250;
-data_n = {'MODEL-1','MODEL-2','MODEL-1-OS','MODEL-2-OS','DISCRETE','GT'};
+data_n = {'MODEL-1','MODEL-2','DISCRETE','GT'};
 
 
 % debug info
 disp('Reading files from disk....')
-
-% ECKENHOFF MODEL v1
-disp('ECKENHOFF v1')
-numruns = 0;
-for file = dir([path_main,path_sub,'*.txt'])'
-    filesplit = strsplit(file.name,'_');
-    if any(strcmp(filesplit,'eckenhoffv1.txt'))
-        disp(file.name)
-        data_e{length(data_e)+1} = importdata([path_main,path_sub,file.name],delimiterIn,headerlinesIn);
-        numruns = numruns + 1;
-    end
-end
-
-% ECKENHOFF MODEL v2
-disp('ECKENHOFF v2')
-for file = dir([path_main,path_sub,'*.txt'])'
-    filesplit = strsplit(file.name,'_');
-    if any(strcmp(filesplit,'eckenhoffv2.txt'))
-        disp(file.name)
-        data_e{length(data_e)+1} = importdata([path_main,path_sub,file.name],delimiterIn,headerlinesIn);
-    end
-end
 
 % CPI MODEL v1
 disp('CPI v1')
