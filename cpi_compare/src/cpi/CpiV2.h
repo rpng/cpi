@@ -64,7 +64,7 @@ public:
 
 
     /**
-     * Default constructor for our Model 2 preintegration
+     * Default constructor for our Model 2 preintegration (piecewise constant local acceleration assumption)
      * @param sigma_w gyroscope white noise density (rad/s/sqrt(hz))
      * @param sigma_wb gyroscope random walk (rad/s^2/sqrt(hz))
      * @param sigma_a accelerometer white noise density (m/s^2/sqrt(hz))
