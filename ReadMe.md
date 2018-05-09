@@ -11,7 +11,14 @@ We also include the MATLAB scripts for generating the Monte-Carlo simulation for
 We use the GAZEBO simulator to get the groundtruth pose and IMU readings from a MAV trajectory, to which we add random noise when generating our Monte-Carlo scenarios (see the cpi_simulation directory for more details).
 We provide the scripts used to generate the results in the paper, and a step by step guide on how to generate these results yourself.
 
+## Demo Videos
 
+Here are some youtube videos of continuous preintegration being used in a realworld system and achiving realtime performance.
+While they do not directly use this codebase, which is purely for simulation comparision, they use the files included in this repository to compute the preintegrated measurements.
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/Pyv2l0RObDg/1.jpg)](http://www.youtube.com/watch?v=Pyv2l0RObDg "Continuous Preintegration in Tightly-Coupled Indirect VIO")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/yIgQX2SH_pI/1.jpg)](http://www.youtube.com/watch?v=yIgQX2SH_pI "Continuous Preintegration in Loosely-Coupled Direct VIO")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/yepdt4Ufn5o/1.jpg)](http://www.youtube.com/watch?v=yepdt4Ufn5o "Continuous Preintegration VIO on Large-scale Indoor Dataset")
 
 
 ## Building GTSAM
