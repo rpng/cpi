@@ -1,9 +1,9 @@
 # Continuous Preintegration
 
 
-This package contains the code implementation of the continuous time preintegration (CPI) methods [[1]](http://udel.edu/~ghuang/papers/tr_cpi.pdf).
+This package contains the code implementation of the continuous time preintegration (CPI) methods [[1]](https://arxiv.org/abs/1805.02774) (for the tech report see [[2]](http://udel.edu/~ghuang/papers/tr_cpi.pdf)).
 We provide a complete system for visual-inertial navigation using synthetically generated vision and inertial measurements.
-This code was used for the comparision against the current state-of-the-art discrete method in GTSAM by Forster et al. [[2]](http://www.roboticsproceedings.org/rss11/p06.pdf).
+This code was used for the comparision against the current state-of-the-art discrete method in GTSAM by Forster et al. [[3]](http://www.roboticsproceedings.org/rss11/p06.pdf).
 All preintegration methods are implemented in the GTSAM optimization framework.
 For comparision, the methods are solved side-by-side using the GTSAM batch fix-lag smoother allowing for near constant memory requirements and easy marginalization.
 
@@ -29,7 +29,7 @@ sudo apt-get install intel-tbb-2018.0-033
 ```
 
 Make sure you build with the manifold version of the GTSAM preintegration, you will get errors otherwise.
-This version is the original Forster et al. [[2]](http://www.roboticsproceedings.org/rss11/p06.pdf) RSS version.
+This version is the original Forster et al. [[3]](http://www.roboticsproceedings.org/rss11/p06.pdf) RSS version.
 GTSAM defaults to a tangent space preintegration method.
 Note that the GTSAM discrete method was tested using the master branch at commit c21186c6212798e665da6b5015296713ddfe8c1d.
 ```cmd
