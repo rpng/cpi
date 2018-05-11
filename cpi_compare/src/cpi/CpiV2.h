@@ -59,8 +59,8 @@ public:
 
 
     // Alpha and beta Jacobians wrt linearization orientation
-    Eigen::Matrix<double,3,3> O_a;
-    Eigen::Matrix<double,3,3> O_b;
+    Eigen::Matrix<double,3,3> O_a= Eigen::Matrix<double,3,3>::Zero();
+    Eigen::Matrix<double,3,3> O_b= Eigen::Matrix<double,3,3>::Zero();
 
 
     /**
