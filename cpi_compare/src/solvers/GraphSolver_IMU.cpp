@@ -72,7 +72,7 @@ ImuFactorCPIv1 GraphSolver::createimufactor_cpi_v1(double updatetime, gtsam::Val
 
     // Create our factor between current and next state!
     return ImuFactorCPIv1(X(ct_state),X(ct_state+1),cpi.P_meas,cpi.DT,cpi.grav,cpi.alpha_tau,cpi.beta_tau,
-                          cpi.q_k2tau,cpi.b_a_lin,cpi.b_w_lin,cpi.J_q,cpi.J_b,cpi.J_a,cpi.H_b,cpi.J_a);
+                          cpi.q_k2tau,cpi.b_a_lin,cpi.b_w_lin,cpi.J_q,cpi.J_b,cpi.J_a,cpi.H_b,cpi.H_a);
 
 
 
@@ -127,7 +127,7 @@ ImuFactorCPIv2 GraphSolver::createimufactor_cpi_v2(double updatetime, gtsam::Val
 
     // Create our factor between current and next state!
     return ImuFactorCPIv2(X(ct_state),X(ct_state+1),cpi.P_meas,cpi.DT,cpi.grav,cpi.alpha_tau,cpi.beta_tau,cpi.q_k2tau,
-                          cpi.q_k_lin,cpi.b_a_lin,cpi.b_w_lin,cpi.J_q,cpi.J_b,cpi.J_a,cpi.H_b,cpi.J_a,cpi.O_b,cpi.O_a);
+                          cpi.q_k_lin,cpi.b_a_lin,cpi.b_w_lin,cpi.J_q,cpi.J_b,cpi.J_a,cpi.H_b,cpi.H_a,cpi.O_b,cpi.O_a);
 
 
 
