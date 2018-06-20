@@ -75,7 +75,7 @@ public:
 
         // Get estimated imu readings
         Eigen::Matrix<double,3,1> w_hat = w_m_0 - b_w_lin;
-        Eigen::Matrix<double,3,1> a_hat = a_m_0 - b_w_lin;
+        Eigen::Matrix<double,3,1> a_hat = a_m_0 - b_a_lin;
 
         // If averaging, average
         if (imu_avg){
