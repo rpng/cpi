@@ -63,7 +63,7 @@ ImuFactorCPIv1 GraphSolver::createimufactor_cpi_v1(double updatetime, gtsam::Val
     // TODO: Clean this code, and use the mutex
     double dt_f = updatetime - imu_times.at(0);
     if (dt_f > 0) {
-        cpi.feed_IMU(imu_times.at(0), updatetime, imu_angvel.at(0), imu_linaccs.at(0), imu_angvel.at(1), imu_linaccs.at(1));
+        cpi.feed_IMU(imu_times.at(0), updatetime, imu_angvel.at(0), imu_linaccs.at(0), imu_angvel.at(0), imu_linaccs.at(0));
         imu_times.at(0) = updatetime;
         imucompound++;
     }
@@ -118,7 +118,7 @@ ImuFactorCPIv2 GraphSolver::createimufactor_cpi_v2(double updatetime, gtsam::Val
     // TODO: Clean this code, and use the mutex
     double dt_f = updatetime - imu_times.at(0);
     if (dt_f > 0) {
-        cpi.feed_IMU(imu_times.at(0), updatetime, imu_angvel.at(0), imu_linaccs.at(0), imu_angvel.at(1), imu_linaccs.at(1));
+        cpi.feed_IMU(imu_times.at(0), updatetime, imu_angvel.at(0), imu_linaccs.at(0), imu_angvel.at(0), imu_linaccs.at(0));
         imu_times.at(0) = updatetime;
         imucompound++;
     }
