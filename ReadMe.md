@@ -1,7 +1,7 @@
 # Continuous Preintegration
 
 
-This package contains the code implementation of the closed-form preintegration (CPI) method for visual-inertial navigation that was first presented at WAFR 2016 and further extended in our recent IJRR paper:
+This package contains the code implementation of the Closed-form PreIntegration (CPI) method for visual-inertial navigation that was first presented at WAFR 2016 and further extended in our recent IJRR paper:
 - Kevin Eckenhoff, Patrick Geneva, and Guoquan Huang, “Closed-form Preintegration Methods for Graph-based Visual-Inertial Navigation,” International Journal of Robotics Research (IJRR), Jan 2019 (to appear).
 - Kevin Eckenhoff, Patrick Geneva, and Guoquan Huang, “High-Accuracy Preintegration for Visual-Inertial Navigation,” International Workshop on the Algorithmic Foundations of Robotics (WAFR), December 18-20, 2016. 
 - Kevin Eckenhoff, Patrick Geneva, and Guoquan Huang, “Continuous Preintegration Theory for Graph-based Visual-Inertial Navigation,” arXiv:1805.02774, May 2018. [arXiv](https://arxiv.org/abs/1805.02774)
