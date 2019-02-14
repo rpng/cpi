@@ -1,8 +1,13 @@
 # Continuous Preintegration
 
 
-This package contains the code implementation of the continuous time preintegration (CPI) methods [[1]](https://arxiv.org/abs/1805.02774) (for the tech report see [[2]](http://udel.edu/~ghuang/papers/tr_cpi.pdf)).
-We provide a complete system for visual-inertial navigation using synthetically generated vision and inertial measurements.
+This package contains the code implementation of the closed-form preintegration (CPI) method for visual-inertial navigation that was first presented at WAFR 2016 and further extended in our recent IJRR paper:
+- Kevin Eckenhoff, Patrick Geneva, and Guoquan Huang, “Closed-form Preintegration Methods for Graph-based Visual-Inertial Navigation,” International Journal of Robotics Research (IJRR), Jan 2019 (to appear).
+- Kevin Eckenhoff, Patrick Geneva, and Guoquan Huang, “High-Accuracy Preintegration for Visual-Inertial Navigation,” International Workshop on the Algorithmic Foundations of Robotics (WAFR), December 18-20, 2016. 
+- Kevin Eckenhoff, Patrick Geneva, and Guoquan Huang, “Continuous Preintegration Theory for Graph-based Visual-Inertial Navigation,” arXiv:1805.02774, May 2018. [arXiv](https://arxiv.org/abs/1805.02774)
+- The companion technical report can also be found [here](http://udel.edu/~ghuang/papers/tr_cpi.pdf).
+
+Here we provide a complete system for visual-inertial navigation using synthetically generated vision and inertial measurements.
 This code was used for the comparision against the current state-of-the-art discrete method in GTSAM by Forster et al. [[3]](http://www.roboticsproceedings.org/rss11/p06.pdf).
 All preintegration methods are implemented in the GTSAM optimization framework.
 For comparision, the methods are solved side-by-side using the GTSAM batch fix-lag smoother allowing for near constant memory requirements and easy marginalization.
