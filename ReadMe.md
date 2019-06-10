@@ -68,7 +68,20 @@ Here are the recommended steps for using this in your own system:
 5. Construct your GTSAM graph as normal (use the `GraphSolver.cpp` as an example)
 
 
-
+## Citation
+Find this useful? Cite us with:
+```latex
+@article{Eckenhoff2019IJRR,
+  author    = {Kevin Eckenhoff and Patrick Geneva and Guoquan Huang},
+  title     = {Closed-form preintegration methods for graph-based visual-inertial navigation},
+  journal   = {International Journal of Robotics Research},
+  volume    = {38},
+  number    = {5},
+  year      = {2019},
+  doi       = {10.1177/0278364919835021},
+  url       = {https://doi.org/10.1177/0278364919835021}
+}
+```
 
 
 
